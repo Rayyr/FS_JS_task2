@@ -1,3 +1,138 @@
-button{
-    
+body {
+    background-color:lightgrey
 }
+
+
+.navBar {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+
+}
+
+
+.navBar :hover {
+    background-color: lightgrey
+
+}
+
+
+.navBar button {
+    font-size: xx-large;
+    padding: 20px 30px;
+    animation-duration: 10s;
+    animation-name: color_change_with_flip;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: white;
+    border: none;
+
+}
+
+
+
+@keyframes color_change_with_flip {
+    0% {
+        color: black;
+        transform: rotate(0deg);
+        scale: 1;
+    }
+
+    25% {
+        color: #03001e;
+        transform: rotate(90deg);
+        scale: .5;
+    }
+
+    50% {
+        color: #7303c0;
+        transform: rotate(180deg);
+        scale: 1;
+    }
+
+    75% {
+        color: #ec38bc;
+        transform: rotate(270deg);
+        scale: .5;
+    }
+
+
+    100% {
+        color: #fdeff9;
+        transform: rotate(360deg);
+        scale: 1;
+
+    }
+}
+
+
+.cont {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    text-align: center;
+     
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+
+.user .id {
+    animation: bounce_from_right 3s ease 1 , color_change 2s ease infinite   ;
+}
+
+.user .name {
+    animation: bounce_from_right 3s ease 1,color_change 2s ease infinite  ;
+
+}
+
+.user .phone {
+    animation: bounce_from_right 3s ease 1,color_change 2s ease infinite  ;
+}
+
+@keyframes bounce_from_right {
+    0% {
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-110px);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes color_change {
+    0% {
+      color:#03001e;
+    }
+
+    30% {
+        color:  #7303c0; 
+    }
+
+    60% {
+       color:#ec38bc; 
+    }
+
+    100% {
+       color:#fdeff9;
+    }
+}
+
+ 
+.cont   :hover {
+    color: black 
+ }
+  
