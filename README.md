@@ -1,1 +1,1 @@
-The Button only accept 1 click ? 
+display user's information once you clicked on the button
